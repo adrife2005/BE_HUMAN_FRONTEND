@@ -1,12 +1,75 @@
-// import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import { FaFacebook, FaInstagram, FaLightbulb, FaPhoneAlt } from 'react-icons/fa'
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+
+import '../css/components/header.css'
 
 const Header = () => {
+  const hamburgerMenu = () => {
+  }
+
   return (
+  <>
     <header className="header">
-      <div className="header__logo">
-        <h3 className="header__title">Be Human</h3>
+      <div className="container">
+        <div className="header__logo">
+          <Link to='/' className='header__title'> Be <span>Human</span> </Link>
+        </div>
+        <nav className="nav">
+          <div className="nav__container">
+            <Link target='_blank' to='https://www.facebook.com/behumancol' className='nav__item'> <FaFacebook/></Link>
+            <Link target='_blank' to='https://www.instagram.com/behumancol' className='nav__item'> <FaInstagram/></Link>
+            <div className="nav__line"></div>
+            <FaLightbulb className='nav__toggle' />
+            <button onClick={hamburgerMenu} className='nav__hamburger'>
+              <div className="top"></div>
+              <div className="middle"></div>
+              <div className="low"></div>
+            </button>
+          </div>
+        </nav>
       </div>
     </header>
+
+    <div className="sidebar">
+        <div className="sidebar__container">
+          <div className="sidebar__top">
+            <Link to='/' className='sidebar__title'> Be <span>Human</span> </Link>
+            <button onClick={hamburgerMenu} className='sidebar__hamburger'>
+              <div className="top"></div>
+              <div className="middle"></div>
+              <div className="low"></div>
+            </button>
+            </div>
+            <div className="sidebar__button">
+            <Link to='/enroll'><button className='btn_be_human'>Inicia con tu transformación</button></Link>
+            </div>
+            <nav className="sidebar__section">
+              <ul className="sidebar__list">
+                <li className="sidebar__item"><Link className='sidebar__item__link' to='/'>Inicio</Link></li>
+                <li className="sidebar__item"><Link className='sidebar__item__link' to='/conoce'>Conoce Be Human</Link></li>
+                <li className="sidebar__item"><Link className='sidebar__item__link' to='/planes'>Planes</Link></li>
+                <li className="sidebar__item"><Link className='sidebar__item__link' to='/equipamiento'>Equipamiento</Link></li>
+                <li className="sidebar__item"><Link className='sidebar__item__link' to='/contacto'>Contáctanos</Link></li>
+                <li className="sidebar__item"><Link className='sidebar__item__link' to='/faq'>Preguntas Frecuentes</Link></li>
+              </ul>
+            </nav>
+          <div className="sidebar__footer">
+            <div className="sidebar__footer__block">
+              <FaPhoneAlt className='sidebar__footer__item'/> 312-688-2492
+            </div>
+            <Link to='mailto:bhp.informacion@gmail.com' className='sidebar__footer__link' >
+              <MdEmail className='sidebar__footer__item email' />bhp.informacion@gmail.com
+            </Link>
+              <Link to='https://maps.app.goo.gl/4UL6c61eQ45pRZnp7' className='sidebar__footer__link'>
+                <FaLocationDot className='sidebar__footer__item' />
+                Avenida Ankara 11, Real de Canal
+            </Link>
+          </div>
+        </div>
+    </div>
+  </>
   )
 }
 
