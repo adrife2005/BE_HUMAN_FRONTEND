@@ -2,16 +2,29 @@ import {Link} from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaLightbulb, FaPhoneAlt } from 'react-icons/fa'
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-
 import '../css/components/header.css'
+import { useState } from 'react';
 
 const Header = () => {
+  const [isMobileMenuActivate, setIsMobileMenuActivate] = useState(false)
+
+
   const hamburgerMenu = () => {
+    setIsMobileMenuActivate(true)
   }
+  const closeHamburgerMenu = () => {
+    setIsMobileMenuActivate(false)
+  }
+
+  document.addEventListener('scroll', () => {
+    if (scrollY >= 50) {
+      setIsMobileMenuActivate(false)
+    }
+  })
 
   return (
   <>
-    <header className="header">
+    <header className="header" >
       <div className="container">
         <div className="header__logo">
           <Link to='/' className='header__title'> Be <span>Human</span> </Link>
@@ -22,7 +35,7 @@ const Header = () => {
             <Link target='_blank' to='https://www.instagram.com/behumancol' className='nav__item'> <FaInstagram/></Link>
             <div className="nav__line"></div>
             <FaLightbulb className='nav__toggle' />
-            <button onClick={hamburgerMenu} className='nav__hamburger'>
+            <button onClick={hamburgerMenu}  className='nav__hamburger'  >
               <div className="top"></div>
               <div className="middle"></div>
               <div className="low"></div>
@@ -32,18 +45,18 @@ const Header = () => {
       </div>
     </header>
 
-    <div className="sidebar">
-        <div className="sidebar__container">
-          <div className="sidebar__top">
+      <div className={`sidebar ${isMobileMenuActivate ? "open" : ""}`} >
+        <div  className="sidebar__container">
+          <div className="sidebar__top" >
             <Link to='/' className='sidebar__title'> Be <span>Human</span> </Link>
-            <button onClick={hamburgerMenu} className='sidebar__hamburger'>
+            <button onClick={closeHamburgerMenu} className='sidebar__hamburger'>
               <div className="top"></div>
               <div className="middle"></div>
               <div className="low"></div>
             </button>
             </div>
             <div className="sidebar__button">
-            <Link to='/enroll'><button className='btn_be_human'>Inicia con tu transformación</button></Link>
+            <Link to='/enroll'><button className='btn_be_human'>Inscribete Ya</button></Link>
             </div>
             <nav className="sidebar__section">
               <ul className="sidebar__list">
@@ -69,6 +82,8 @@ const Header = () => {
           </div>
         </div>
     </div>
+
+      <div id='opacity' className={`${isMobileMenuActivate ? "opacity" : ""}`}></div>
   </>
   )
 }

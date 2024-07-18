@@ -26,9 +26,10 @@
   padding: 0.5em 4em;
   border-radius: 1rem;
   border: 2px solid #ca8a04;
-  font-weight: 600;
   text-align: center;
   user-select: none;
+  font-weight: 500;
+  width: 100%;
 }
 
 .btn_be_human:hover {

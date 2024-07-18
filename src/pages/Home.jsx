@@ -1,6 +1,12 @@
+import Facilities from "../components/Facilities"
+import Hero from "../components/Hero"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <main>
+      <Hero />
+      <Facilities/>
+    </main>
   )
 }
 
