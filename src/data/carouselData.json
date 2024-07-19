@@ -11,6 +11,14 @@
     {
       "src": "./be_contact.png",
       "alt": "Image 3 for Carousel"
+    },
+    {
+      "src": "./be_horarios.jpg",
+      "alt": "Image 4 for Carousel"
+    },
+    {
+      "src": "./be_hero2.jpeg",
+      "alt": "Image 5 for Carousel"
     }
   ]
 }

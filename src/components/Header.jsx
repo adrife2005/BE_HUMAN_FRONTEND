@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaLightbulb, FaPhoneAlt } from 'react-icons/fa'
+import {  FaInstagram,  FaRegLightbulb, FaPhoneAlt } from 'react-icons/fa'
+import { SlSocialFacebook } from "react-icons/sl";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import '../css/components/header.css'
@@ -25,16 +26,16 @@ const Header = () => {
   return (
   <>
     <header className="header" >
-      <div className="container">
+      <div className="header__wrapper header__container">
         <div className="header__logo">
           <Link to='/' className='header__title'> Be <span>Human</span> </Link>
         </div>
         <nav className="nav">
           <div className="nav__container">
-            <Link target='_blank' to='https://www.facebook.com/behumancol' className='nav__item'> <FaFacebook/></Link>
+            <Link target='_blank' to='https://www.facebook.com/behumancol' className='nav__item'> <SlSocialFacebook/></Link>
             <Link target='_blank' to='https://www.instagram.com/behumancol' className='nav__item'> <FaInstagram/></Link>
             <div className="nav__line"></div>
-            <FaLightbulb className='nav__toggle' />
+            <FaRegLightbulb className='nav__toggle' />
             <button onClick={hamburgerMenu}  className='nav__hamburger'  >
               <div className="top"></div>
               <div className="middle"></div>
@@ -56,7 +57,7 @@ const Header = () => {
             </button>
             </div>
             <div className="sidebar__button">
-            <Link to='/enroll'><button className='btn_be_human'>Inscribete Ya</button></Link>
+            <Link to='/enroll'><button className='btn_be_human'>¡Inscribete Ya!</button></Link>
             </div>
             <nav className="sidebar__section">
               <ul className="sidebar__list">

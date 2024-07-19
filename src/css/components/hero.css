@@ -1,11 +1,7 @@
 .hero {
-  padding: 10px;
-}
-
-.container__hero {
-  max-width: 2000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 5px;
+  padding: 5px 10px 10px 10px;
+  background-color: var(--clr-neutral200);
 }
 
 .hero__carousel {
@@ -53,10 +49,10 @@
 }
 
 .hero__indicators {
-  display: flex;
   position: absolute;
-  bottom: 1rem;
+  bottom: 5px;
   left: 50%;
+  transform: translate(-50%);
 }
 
 .hero__indicator {
@@ -68,7 +64,7 @@
   outline: none;
   box-shadow: 0px 0px 5px #555;
   margin: 0 0.2rem;
-  cursor: default;
+  cursor: pointer;
 }
 
 .hero__indicator__inactive {

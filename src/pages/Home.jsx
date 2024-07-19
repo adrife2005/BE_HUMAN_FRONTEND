@@ -1,11 +1,15 @@
 import Facilities from "../components/Facilities"
 import Hero from "../components/Hero"
+import Horario from "../components/Horario"
+import Membresias from "../components/Membresias"
 
 const Home = () => {
   return (
-    <main>
+    <main className="Home">
       <Hero />
-      <Facilities/>
+      <Facilities />
+      <Horario />
+      <Membresias/>
     </main>
   )
 }

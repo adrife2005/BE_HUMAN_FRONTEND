@@ -13,11 +13,11 @@ const Hero = () => {
   const prevSlide = () => {
     setSlide(slide === 0  ?  slides.length -1 : slide - 1)
   }
-  
+
   useEffect(() => {
     setTimeout(() => {
       setSlide(slide === slides.length - 1  ? 0  : slide + 1)
-    },5000);
+    },3000);
   }, [slide])
 
   return (

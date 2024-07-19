@@ -27,7 +27,7 @@
   --clr-gym: #ca8a04;
 
   /* Box Shadows */
-  --header-shadow: 0 6px 9px -4px rgba(0, 0, 0, 0.4);
+  --header-shadow: 0 6px 9px -4px rgb(202, 138, 4);
   --sidebar-shadow: 0 3px 17px rgba(0, 0, 0, 0.1);
 
   /* sizes */
@@ -94,6 +94,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  user-select: none;
 }
 
 .section {
