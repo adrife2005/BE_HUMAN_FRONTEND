@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../css/components/membresias.css'
 
 const Membresias = () => {
@@ -15,8 +16,8 @@ const Membresias = () => {
               <p>MembresÍa: $70/dia <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll' className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$70.00</div>
           </div>
           <div className="membresia__card">
             <h3 className="membresia__title">SEMANA</h3>
@@ -24,8 +25,8 @@ const Membresias = () => {
               <p>MembresÍa: $190/semana <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll' className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$190.00</div>
           </div>
           <div className="membresia__card">
             <h3 className="membresia__title">QUINCENA</h3>
@@ -33,8 +34,8 @@ const Membresias = () => {
               <p>MembresÍa: $315/quincena <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll'className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$315.00</div>
           </div>
           <div className="membresia__card">
             <h3 className="membresia__title">MENSUALIDAD</h3>
@@ -42,44 +43,44 @@ const Membresias = () => {
               <p>MembresÍa: $550/mensualidad <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
-          </div>
-          <div className="membresia__card">
-            <h3 className="membresia__title">MENSUALIDAD</h3>
-            <div className="membresia__details">
-              <p>MembresÍa: $550/mensualidad <span>mxn</span></p>
-              <p>Cuota de inscripción: $0 <span>mxn</span></p>
-            </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll' className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$550.00</div>
           </div>
           <div className="membresia__card">
             <h3 className="membresia__title">ESTUDIANTE</h3>
             <div className="membresia__details">
-              <p>MembresÍa: $550/mensualidad <span>mxn</span></p>
+              <p>MembresÍa: $450/mensualidad <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll'  className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$450.00</div>
           </div>
           <div className="membresia__card">
             <h3 className="membresia__title">CROSSKIDS</h3>
             <div className="membresia__details">
-              <p>MembresÍa: $550/mensualidad <span>mxn</span></p>
+              <p>MembresÍa: $430/mensualidad <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>Suscribete</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll' className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$430.00</div>
           </div>
           <div className="membresia__card">
             <h3 className="membresia__title">TRIMESTRE</h3>
             <div className="membresia__details">
-              <p>MembresÍa: $550/mensualidad <span>mxn</span></p>
+              <p>MembresÍa: $1500/trimestre <span>mxn</span></p>
               <p>Cuota de inscripción: $0 <span>mxn</span></p>
             </div>
-            <button className='btn_be_human'>SEMESTRE</button>
-            <div className='membresia__precio'>$700.00</div>
+            <Link to='/enroll' className='btn_be_human'>Suscribete</Link>
+            <div className='membresia__precio'>$1500.00</div>
+          </div>
+          <div className="membresia__card">
+            <h3 className="membresia__title">SEMESTRE</h3>
+            <div className="membresia__details">
+              <p>MembresÍa: $2700/semestre <span>mxn</span></p>
+              <p>Cuota de inscripción: $0 <span>mxn</span></p>
+            </div>
+            <Link to='/enroll' className='btn_be_human'>SEMESTRE</Link>
+            <div className='membresia__precio'>$2700.00</div>
           </div>
       </div>
       </div>

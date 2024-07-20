@@ -46,8 +46,8 @@
 
 .facilities__img {
   object-fit: cover;
-  cursor: pointer;
-  transition: scale 0.3s ease-in-out;
+  cursor: zoom-in;
+  transition: transform 0.3s ease-in-out;
   max-height: 415px;
   width: 100%;
   border-radius: 10px;
@@ -55,7 +55,7 @@
 
 .facilities__img:hover {
   opacity: 0.9;
-  scale: 1.01;
+  transform: scale(1.01);
 }
 
 .facilities__container {

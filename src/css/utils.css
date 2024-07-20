@@ -30,6 +30,7 @@
   user-select: none;
   font-weight: 500;
   width: 100%;
+  display: block;
 }
 
 .btn_be_human:hover {

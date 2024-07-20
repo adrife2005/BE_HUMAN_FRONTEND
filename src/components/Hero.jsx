@@ -27,7 +27,7 @@ const Hero = () => {
             <BsArrowLeftCircleFill className='arrow arrow-left' onClick={prevSlide}/>
                 {
                   slides.map((item, idx) => {
-                    return <img src={item.src} alt={item.alt} key={idx} className={ slide === idx ? 'hero__slide' : 'hero__slide hero__slide__hidden'} />
+                    return <img src={item.src} alt={item.alt} key={idx} className={ slide === idx ? 'hero__slide' : 'hero__slide__hidden'}/>
                   })
                 }
             <BsArrowRightCircleFill className='arrow arrow-right' onClick={nextSlide}/>
