@@ -260,4 +260,8 @@
     margin: 10px;
     cursor: pointer;
   }
+
+  .header {
+    padding: 10px 10px;
+  }
 }

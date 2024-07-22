@@ -34,6 +34,10 @@
   outline: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+#newsletter__email:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 .newsletter__input #email__form .btn_be_human {
   margin-top: 0px;
   margin-bottom: 0px;

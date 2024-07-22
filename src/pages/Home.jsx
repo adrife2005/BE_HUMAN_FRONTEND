@@ -4,6 +4,7 @@ import Horario from "../components/Horario"
 import Membresias from "../components/Membresias"
 import Coach from "../components/Coach"
 import Newsletter from "../components/Newsletter"
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <Coach/>
       <Membresias />
       <Horario />
-      <Newsletter/>
+      <Newsletter />
+      <Footer/>
     </main>
   )
 }

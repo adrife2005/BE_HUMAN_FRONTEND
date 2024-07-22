@@ -1,6 +1,6 @@
 .horario {
   background-color: var(--clr-neutral400);
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .horario .container {
@@ -10,19 +10,7 @@
   padding-right: 10px;
 }
 
-.horario__mainTitle h2 {
-  text-align: center;
-  font-size: var(--text-3xl);
-  font-weight: 600;
-}
-
-.horario__title {
-  font-size: var(--text-xl);
-  font-weight: 600;
-}
-
 .horario__container {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -85,9 +73,6 @@
 
 /* sm */
 @media (max-width: 640px) {
-  .horario__title {
-    display: none;
-  }
   .horario__container {
     width: 50%;
     transform: translate(50%);
