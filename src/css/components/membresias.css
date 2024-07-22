@@ -31,16 +31,16 @@
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 60px;
+  gap: 20px;
 }
 
 .membresia__card {
   position: relative;
-  width: 100%;
   padding: 20px;
   background-color: var(--clr-neutral200);
   box-shadow: 0 6px 9px -4px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
+  margin: 20px;
 }
 
 .membresia__title {
@@ -71,12 +71,33 @@
 }
 
 /* Sections */
+/* 3xl */
+@media (max-width: 1750px) {
+  .membresia .container {
+    max-width: 1600px;
+  }
+  .membresia__container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+  }
+}
 
 /* 2xl */
 @media (max-width: 1536px) {
+  .membresia .container {
+    max-width: 1300px;
+  }
+
   .membresia___title {
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .membresia__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
   }
 }
 
@@ -85,6 +106,10 @@
   .membresia___title {
     margin-right: 0px;
     font-size: var(--text-3xl);
+  }
+
+  .membresia__container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -95,10 +120,19 @@
   }
 
   .membresia___title {
+    margin-right: 50px;
     margin-left: 50px;
   }
   .membresia__description {
     max-width: 50ch;
+  }
+
+  .membresia__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membresia .container {
+    max-width: 768px;
   }
 }
 
@@ -119,12 +153,21 @@
     justify-content: space-evenly;
     width: 100%;
   }
+
   .membresia__description {
     max-width: 60ch;
     font-size: var(--text-base);
     text-align: start;
     margin-top: 30px;
     padding: 10px;
+  }
+
+  .membresia__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .membresia .container {
+    max-width: 640px;
   }
 }
 
@@ -142,6 +185,13 @@
     text-align: center;
     font-size: var(--text-3xl);
     font-weight: 600;
+  }
+  .membresia .container {
+    width: 100%;
+  }
+
+  .membresia__container {
+    margin-top: 50px;
   }
 }
 

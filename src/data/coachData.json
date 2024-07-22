@@ -1,0 +1,50 @@
+{
+  "staff" : [
+    {
+      "src" : "./be_staff_1.jpg",
+      "name": "Uriel Solis",
+      "description": "¡Desafía tus límites, aumenta tu fuerza y logra tus metas con el coach Uriel!💪🏼CROSSFIT💥 -Lunes a viernes -Clases: 5, 6:15, 7:30 y 8:45 en el turno vespertino.🏋🏻",
+      "button": "View More"
+    },
+    {
+      "src" : "./be_staff_2.jpg",
+      "name": "Verito",
+      "description": "¡Ponle sabor a tu semana cada mañana, baila al ritmo de la coach Verito!💃 Be dance de lunes a viernes 7:00 A.M.",
+      "button": "View More"
+    },
+    {
+      "src" : "./be_staff_3.jpg",
+      "name": "Adrián",
+      "description": "¡Encuentra el equilibrio de tu cuerpo y tu mente con el coach Adrián!🧘🏼‍♂️ YOGA✨-Lunes a viernes-Clases: 8 y 9 AM 🧘🏼‍♂️👏🏼",
+      "button": "View More"
+    },    {
+      "src" : "./be_staff_4.jpg",
+      "name": "Saharim",
+      "description": "Entrena con nuestra coach Saharim en el turno de la mañana de lunes a viernes!💯",
+      "button": "View More"
+    },    {
+      "src" : "./be_staff_5.jpg",
+      "name": "Fernando",
+      "description": "Todo esfuerzo vale la pena, no dudes en comenzar tu vida fit con la ayuda de nuestro coach Fernando!🔥💪🏼",
+      "button": "View More"
+    },
+    {
+      "src" : "./be_staff_6.jpg",
+      "name": "Karla",
+      "description": "¡Encuentra el equilibrio de tu cuerpo y tu mente con el coach Adrián!🧘🏼‍♂️ YOGA✨-Lunes a viernes-Clases: 8 y 9 AM 🧘🏼‍♂️👏🏼",
+      "button": "View More"
+    },
+    {
+      "src" : "./be_staff_7.jpg",
+      "name": "Arturo",
+      "description": "¡Cambia tu estilo de vida con nuestro coach Arturo! 💪💯",
+      "button": "View More"
+    },
+    {
+      "src" : "./be_staff_8.jpg",
+      "name": "Adriana Rodríguez",
+      "description": "¡Hoy inicia con toda la actitud!💯Coach Adriana Rodríguez💪",
+      "button": "View More"
+    }
+  ]
+}
