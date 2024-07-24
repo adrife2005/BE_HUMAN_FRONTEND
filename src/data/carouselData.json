@@ -2,23 +2,28 @@
   "slides": [
     {
       "src": "./be_hero.jpg",
-      "alt": "Image 1 for Carousel"
+      "alt": "Image 1 for Carousel",
+      "style": false
     },
     {
       "src": "./be_hero1.jpg",
-      "alt": "Image 2 for Carousel"
+      "alt": "Image 2 for Carousel",
+      "style": false
     },
     {
       "src": "./be_contact.png",
-      "alt": "Image 3 for Carousel"
-    },
-    {
-      "src": "./be_horarios.jpg",
-      "alt": "Image 4 for Carousel"
+      "alt": "Image 3 for Carousel",
+      "style": false
     },
     {
       "src": "./be_hero2.jpeg",
-      "alt": "Image 5 for Carousel"
+      "alt": "Image 5 for Carousel",
+      "style": false
+    },
+    {
+      "src": "./be_hero3.jpg",
+      "alt": "Image 6 for Carousel",
+      "style": true
     }
   ]
 }
