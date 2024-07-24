@@ -35,7 +35,7 @@ const Header = () => {
             <Link target='_blank' to='https://www.facebook.com/behumancol' className='nav__item'> <SlSocialFacebook/></Link>
             <Link target='_blank' to='https://www.instagram.com/behumancol' className='nav__item'> <FaInstagram/></Link>
             <div className="nav__line"></div>
-            <FaRegLightbulb className='nav__toggle' />
+            <div className="nav__item"><FaRegLightbulb/></div>
             <button onClick={hamburgerMenu}  className='nav__hamburger'  >
               <div className="top"></div>
               <div className="middle"></div>

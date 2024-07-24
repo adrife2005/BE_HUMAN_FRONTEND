@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "none", background: "red" }}
+      style={{ ...style, display:"block", right:"25px", zIndex: "1"}}
       onClick={onClick}
     />
   );
@@ -20,7 +20,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "none", background: "green" }}
+      style={{ ...style, display: "block", left:"25px", zIndex: "1"}}
       onClick={onClick}
     />
   );
@@ -28,7 +28,6 @@ function SamplePrevArrow(props) {
 
 const Hero = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,

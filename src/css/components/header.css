@@ -11,7 +11,7 @@
 }
 
 .header__logo {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   font-weight: bold;
 }
 
@@ -27,37 +27,39 @@
 }
 
 .nav__line {
-  padding-top: 1.5rem;
+  height: 35px;
   border: 1px solid var(--clr-gym);
-  margin: 10px;
+  margin: 0px 10px;
 }
 
 .nav__container .nav__item {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   padding: 10px;
   border-radius: 10px;
-}
-
-.nav__container .nav__item:hover {
-  background-color: var(--clr-neutral300);
-}
-
-.nav__toggle {
-  font-size: var(--text-2xl);
-  margin: 10px;
+  transition: background-color 0.1s ease-in-out;
+  outline: 1px solid rgb(202, 138, 4, 0.6);
   cursor: pointer;
 }
 
+.nav__container .nav__item:hover {
+  background-color: rgb(202, 138, 4, 0.2);
+}
+
+.nav__hamburger {
+  outline: 1px solid rgb(202, 138, 4, 0.6);
+  border-radius: 10px;
+}
+
+.nav__hamburger:hover {
+  background-color: rgb(202, 138, 4, 0.2);
+}
+
 .nav__hamburger div {
-  width: 33px;
-  min-height: 2px;
+  width: 30px;
+  height: 2px;
   margin: 8px 0;
   background-color: var(--clr-default);
   transition: background-color 0.2s ease-in-out;
-}
-
-.nav__hamburger:hover div {
-  background-color: var(--clr-gym);
 }
 
 .sidebar {
@@ -98,12 +100,17 @@
 }
 
 .sidebar__title {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   font-weight: bold;
 }
 
 .sidebar__title span {
   color: var(--clr-gym);
+}
+
+.sidebar__hamburger {
+  outline: 1px solid rgb(202, 138, 4, 0.6);
+  border-radius: 10px;
 }
 
 .sidebar__hamburger div {
@@ -114,8 +121,8 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.sidebar__hamburger:hover div {
-  background-color: var(--clr-gym);
+.sidebar__hamburger:hover {
+  background-color: rgb(202, 138, 4, 0.2);
 }
 
 .sidebar__hamburger .top {

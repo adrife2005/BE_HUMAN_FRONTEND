@@ -1,6 +1,10 @@
 {
   "slides": [
     {
+      "src": "./be_hero.jpg",
+      "alt": "Image 1 for Carousel"
+    },
+    {
       "src": "./be_hero1.jpg",
       "alt": "Image 2 for Carousel"
     },

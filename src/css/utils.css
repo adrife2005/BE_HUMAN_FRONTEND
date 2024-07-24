@@ -34,7 +34,7 @@
 
 .btn_be_human:hover {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #ca8a04;
+  background-color: rgb(202, 138, 4, 0.2);
 }
 
 /* Sections */
