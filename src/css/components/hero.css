@@ -1,12 +1,7 @@
 .hero {
   margin-top: 5px;
   padding: 10px 5px 5px 5px;
-  background-color: var(--clr-neutral200);
-  background-image: url('./be_hero_backround.png');
-  background-position: center;
-  background-size: 300px;
-  background-attachment: fixed;
-  background-color: rgb(202, 138, 4, 0.2);
+  background-color: rgb(202, 138, 4, 0.1);
 }
 
 .container__hero {

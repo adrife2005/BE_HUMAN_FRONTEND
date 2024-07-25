@@ -35,13 +35,12 @@ const Hero = () => {
 
   const settings = {
     infinite: true,
-    speed: 2000,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 5000,
-    cssEase: "linear",
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
