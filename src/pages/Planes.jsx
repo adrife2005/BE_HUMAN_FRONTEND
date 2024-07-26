@@ -1,7 +1,10 @@
+import Membresias from '../components/Membresias'
 
 const Planes = () => {
   return (
-    <div>Planes</div>
+    <main>
+      <Membresias/>
+    </main>
   )
 }
 

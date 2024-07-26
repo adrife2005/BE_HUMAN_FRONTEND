@@ -47,8 +47,8 @@ const Header = () => {
             <NavLink className={linkClass} to='/conoce'>Conoce Be Human</NavLink>
             <NavLink className={linkClass} to='/planes'>Planes</NavLink>
             <NavLink className={linkClass} to='/equipamiento'>Equipamiento</NavLink>
-            <NavLink className={linkClass} to='/contacto'>Contáctanos</NavLink>
-            <NavLink className={linkClass} to='/horario'>Horario</NavLink>
+            <NavLink className={linkClass} to='/enroll'>Contáctanos</NavLink>
+            <NavLink className={linkClass} to='/ubicacion'>Ubicación</NavLink>
         </nav>
         <nav className="nav header__nav">
           <div className="nav__container">
@@ -81,12 +81,12 @@ const Header = () => {
             </div>
             <nav className="sidebar__section">
               <ul className="sidebar__list">
-                <li className="sidebar__item"><NavLink className='sidebar__item__link' to='/'>Inicio</NavLink></li>
-                <li className="sidebar__item"><NavLink className='sidebar__item__link' to='/conoce'>Conoce Be Human</NavLink></li>
-                <li className="sidebar__item"><NavLink className='sidebar__item__link' to='/planes'>Planes</NavLink></li>
-                <li className="sidebar__item"><NavLink className='sidebar__item__link' to='/equipamiento'>Equipamiento</NavLink></li>
-                <li className="sidebar__item"><NavLink className='sidebar__item__link' to='/contacto'>Contáctanos</NavLink></li>
-                <li className="sidebar__item"><NavLink className='sidebar__item__link' to='/horario'>Horario</NavLink></li>
+                <li onClick={() => setIsMobileMenuActivate(false)} className="sidebar__item"><NavLink className='sidebar__item__link' to='/'>Inicio</NavLink></li>
+                <li onClick={() => setIsMobileMenuActivate(false)} className="sidebar__item"><NavLink className='sidebar__item__link' to='/conoce'>Conoce Be Human</NavLink></li>
+                <li onClick={() => setIsMobileMenuActivate(false)} className="sidebar__item"><NavLink className='sidebar__item__link' to='/planes'>Planes</NavLink></li>
+                <li onClick={() => setIsMobileMenuActivate(false)} className="sidebar__item"><NavLink className='sidebar__item__link' to='/equipamiento'>Equipamiento</NavLink></li>
+                <li onClick={() => setIsMobileMenuActivate(false)} className="sidebar__item"><NavLink className='sidebar__item__link' to='/enroll'>Contáctanos</NavLink></li>
+                <li onClick={() => setIsMobileMenuActivate(false)} className="sidebar__item"><NavLink className='sidebar__item__link' to='/ubicacion'>Ubicación</NavLink></li>
               </ul>
             </nav>
           <div className="sidebar__footer">

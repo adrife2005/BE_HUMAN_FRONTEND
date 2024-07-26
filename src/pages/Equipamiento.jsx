@@ -1,7 +1,10 @@
+import Facilities2 from '../components/Facilities2'
 
 const Equipamiento = () => {
   return (
-    <div>Equipamiento</div>
+    <main>
+      <Facilities2/>
+    </main>
   )
 }
 

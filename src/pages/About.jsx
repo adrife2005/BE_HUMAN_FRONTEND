@@ -1,7 +1,10 @@
+import Acerca from "../components/Acerca"
 
 const About = () => {
   return (
-    <div>About</div>
+    <main>
+      <Acerca/>
+    </main>
   )
 }
 

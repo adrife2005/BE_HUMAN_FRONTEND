@@ -1,16 +1,5 @@
 {
   "slides": [
-    
-    {
-      "src": "./be_hero_6.jpeg",
-      "alt": "Image 6 for Carousel",
-      "style": false
-    },
-    {
-      "src": "./be_hero_7.jpeg",
-      "alt": "Image 6 for Carousel",
-      "style": false
-    },
     {
       "src": "./be_hero.jpg",
       "alt": "Image 1 for Carousel",
@@ -35,7 +24,15 @@
       "src": "./be_hero3.jpg",
       "alt": "Image 6 for Carousel",
       "style": false
+    },
+    {
+      "src": "./be_hero_6.jpeg",
+      "alt": "Image 6 for Carousel",
+      "style": false
+    },    {
+      "src": "./be_hero_7.jpeg",
+      "alt": "Image 6 for Carousel",
+      "style": false
     }
-    
   ]
 }

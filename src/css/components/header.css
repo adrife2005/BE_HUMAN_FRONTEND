@@ -43,11 +43,11 @@
 }
 
 .header__item__link:hover {
-  background-color: rgb(202, 138, 4, 0.3);
+  background-color: rgb(202, 138, 4, 0.2);
 }
 
 .header__item__link__fixed {
-  background-color: rgb(202, 138, 4, 0.3);
+  background-color: rgb(202, 138, 4, 0.2);
 }
 
 .nav .nav__container {
@@ -345,9 +345,5 @@
 
   .header {
     padding: 10px 10px;
-  }
-
-  .header__active {
-    background-color: var(--bg-color);
   }
 }
