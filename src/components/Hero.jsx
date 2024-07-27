@@ -3,6 +3,10 @@ import { slides } from '../data/carouselData.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IoTimeOutline } from "react-icons/io5";
+import { BsLightningCharge } from "react-icons/bs";
+
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -63,12 +67,29 @@ const Hero = () => {
           <div className="hero__content">
             <div  className="hero__content__container">
               <div  className= 'box__front'>
-                  <div className="hero__content__img">
+                <div className="hero__content__img">
                     <img src="be_zumba.jpg" alt="First Image of Zumba" />
                   </div>
                     <div className="hero__content__name">
                       <p>ZUMBA</p>
                   </div>
+                  <div className="hero__content__wrap">
+                      <div className="duracion">
+                        <IoTimeOutline />
+                        <p className='hero__one'>Duración</p>
+                        <p className='hero__two'>60 <span>min</span></p>
+                  </div>
+                  <div className="intencidad">
+                        <BsLightningCharge />
+                        <p className='hero__one'>Intensidad</p>
+                        <p className='hero__two'>Alta</p>
+                      </div>
+                </div>
+                <hr className='hero__content__line'/>
+                <div className="hero__content__info">
+                  <p>      Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
+                  </p>
+                </div>
               </div>
 
             </div>
@@ -79,7 +100,24 @@ const Hero = () => {
                   </div>
                     <div className="hero__content__name">
                       <p>YOGA</p>
+                </div>
+                <div className="hero__content__wrap">
+                      <div className="duracion">
+                        <IoTimeOutline />
+                        <p className='hero__one'>Duración</p>
+                        <p className='hero__two'>60 <span>min</span></p>
                   </div>
+                  <div className="intencidad">
+                        <BsLightningCharge />
+                        <p className='hero__one'>Intensidad</p>
+                        <p className='hero__two'>Alta</p>
+                      </div>
+                </div>
+                <hr className='hero__content__line'/>
+                <div className="hero__content__info">
+                  <p>       Libera tu energía en un entrenamiento guiado que combina técnicas de artes marciales, música y ejercicio.
+                  </p>
+                </div>
               </div>
   
             </div>
@@ -91,7 +129,25 @@ const Hero = () => {
                   </div>
                     <div className="hero__content__name">
                       <p>CROSSFIT</p>
+                </div>
+                <div className="hero__content__wrap">
+                      <div className="duracion">
+                        <IoTimeOutline />
+                        <p className='hero__one'>Duración</p>
+                        <p className='hero__two'>60 <span>min</span></p>
                   </div>
+                  <div className="intencidad">
+                        <BsLightningCharge />
+                        <p className='hero__one'>Intensidad</p>
+                        <p className='hero__two'>Alta</p>
+                      </div>
+                </div>
+                <hr className='hero__content__line'/>
+                <div className="hero__content__info">
+                  <p>       Circuitos de entrenamiento grupal en un área funcional, donde serás guiado por un profesor.
+
+                  </p>
+                </div>
               </div>
     
               </div>
@@ -102,7 +158,24 @@ const Hero = () => {
                   </div>
                     <div className="hero__content__name">
                       <p>GYM</p>
+                </div>
+                <div className="hero__content__wrap">
+                      <div className="duracion">
+                        <IoTimeOutline />
+                        <p className='hero__one'>Duración</p>
+                        <p className='hero__two'>60 <span>min</span></p>
                   </div>
+                  <div className="intencidad">
+                        <BsLightningCharge />
+                        <p className='hero__one'>Intensidad</p>
+                        <p className='hero__two'>Alta</p>
+                      </div>
+                </div>
+                <hr className='hero__content__line'/>
+                <div className="hero__content__info">
+                  <p>      Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
+                  </p>
+                </div>
               </div>
 
             </div>

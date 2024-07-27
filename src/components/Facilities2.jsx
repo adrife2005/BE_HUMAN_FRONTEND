@@ -2,19 +2,17 @@ import '../css/components/facilities.css'
 import { useState } from 'react'
 
 const Facilities = () => {
+  const arrImages = ['./be_ins_1.jpg', './be_ins_2.jpg', './be_ins_3.jpg', './be_ins_4.jpg', './be_ins_5.jpg', './be_ins_6.jpg', './be_ins_7.jpg', './be_ins_8.jpg', './be_ins_9.jpg','./be_ins_10.jpg', './be_ins_1.jpg', './be_ins_2.jpg', './be_ins_3.jpg']
   const [imageOpen, setImageOpen] = useState(false);
-  const [img, setImg] = useState('')
 
-  const openImg = (pic) => {
+  const openImg = () => {
     document.body.style.overflowY = 'hidden'
     setImageOpen(true)
-    setImg(pic)
   }
 
   const closeImg = () => {
     document.body.style.overflowY = 'visible'
     setImageOpen(false)
-    setImg('')
   }
 
   return (
@@ -29,22 +27,29 @@ const Facilities = () => {
         <div className="facilities__posts">
           {
             <>
-            <img id='1'  src="./be_ins_1.jpg" alt="" className='facilities__img facilities__1' onClick={() => openImg(document.getElementById('1').src)} />
-            <img id='2'  src="./be_ins_2.jpg" alt="" className="facilities__img facilities__5"   onClick={() => openImg(document.getElementById('2').src)}/>
-            <img id='3'  src="./be_ins_3.jpg" alt="" className="facilities__img facilities__2"  onClick={() => openImg(document.getElementById('3').src)} />
-            <img id='4'  src="./be_ins_4.jpg" alt="" className="facilities__img facilities__3"  onClick={() => openImg(document.getElementById('4').src)} />
-            <img id='5'  src="./be_ins_5.jpg" alt="" className="facilities__img facilities__4"   onClick={() => openImg(document.getElementById('5').src)}/>
-            <img id='6'  src="./be_ins_6.jpg" alt="" className="facilities__img facilities__7"   onClick={() => openImg(document.getElementById('6').src)}/>
-            <img id='7'  src="./be_ins_7.jpg" alt="" className="facilities__img facilities__6"   onClick={() => openImg(document.getElementById('7').src)}/>
-            <img id='8'  src="./be_ins_8.jpg" alt="" className="facilities__img facilities__6"   onClick={() => openImg(document.getElementById('8').src)}/>
-            <img id='9'  src="./be_ins_9.jpg" alt="" className="facilities__img facilities__6"   onClick={() => openImg(document.getElementById('9').src)}/>
-            <img id='10'  src="./be_ins_10.jpg" alt="" className="facilities__img facilities__6"   onClick={() => openImg(document.getElementById('10').src)}/>
+            <img id='1'  src="./be_ins_1.jpg" alt="" className='facilities__img facilities__1' onClick={() => openImg()} />
+            <img id='2'  src="./be_ins_2.jpg" alt="" className="facilities__img facilities__5"  onClick={() => openImg()} />
+            <img id='3'  src="./be_ins_3.jpg" alt="" className="facilities__img facilities__2"   onClick={() => openImg()}/>
+            <img id='4'  src="./be_ins_4.jpg" alt="" className="facilities__img facilities__3"  onClick={() => openImg()} />
+            <img id='5'  src="./be_ins_5.jpg" alt="" className="facilities__img facilities__4"  onClick={() => openImg()}/>
+            <img id='6'  src="./be_ins_6.jpg" alt="" className="facilities__img facilities__7"  onClick={() => openImg()}/>
+            <img id='7'  src="./be_ins_7.jpg" alt="" className="facilities__img facilities__6"  onClick={() => openImg()}/>
+            <img id='8'  src="./be_ins_8.jpg" alt="" className="facilities__img facilities__6"   onClick={() => openImg()}/>
+            <img id='9'  src="./be_ins_9.jpg" alt="" className="facilities__img facilities__6"  onClick={() => openImg()} />
+            <img id='10'  src="./be_ins_10.jpg" alt="" className="facilities__img facilities__6" onClick={() => openImg()} />
             </>
           }
         </div>
       </div>
       <div onClick={closeImg} className={imageOpen ? 'facilities__showfullimg' : ''}>
-        <img className='facilities__imgOpen' src={img} />
+        <div className={imageOpen ? 'img__container' : ''}>
+          { innerWidth > 500 ? '' :
+            imageOpen ?
+            arrImages.map((img, inx) =>
+                <img key={inx} className={imageOpen ? 'facilities__imgOpen' : 'facilities__closeImg '}  src={img} />
+              ) : ''
+            }
+        </div>
       </div>
     </section>
   )

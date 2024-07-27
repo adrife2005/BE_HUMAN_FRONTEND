@@ -14,7 +14,7 @@ const Footer = () => {
       </section>
       <section className="footer__socials">
         <div className="footer__container">
-          <h3 className="footer__title__social">Sigenos</h3>
+          <h3 className="footer__title__social">Siguenos</h3>
           <div className="footer__socials__items">
             <Link target="_blank" className="navbar__social"  to='https://www.facebook.com/behumancol?locale=es_LA'>   <FaInstagram className='footer__svg'/></Link>
             <Link target="_blank" className="navbar__social"  to='https://www.instagram.com/behumancol/'>  <SlSocialFacebook className='footer__svg'/></Link>
@@ -53,34 +53,6 @@ const Footer = () => {
       <section className="footer__conditions">
         <div>
           TERMINOS Y CONDICIONES GENERALES
-        <br/>
-        <br/>
-        PURCHASES ON WEBSITE.
-        <br/>
-        -If you register from the 5th to the 14th, your payment will be made on the 1st of the next month.
-        <br/>
-        -If you register from the 15th to the 24th, your payment will be made on the 10th of the next month.
-        <br/>
-        -If you register from the 25th to the 4th, your payment will be made on the 20th of the next month.
-        <br/>
-        - Promotions are not transferable to third parties.
-        <br/>
-        - The promotions are not cumulative.
-        <br/>
-        - They only apply to users without previous debts.
-        <br/>
-        - If you provide erroneous or incorrect information to access a promotion, it will be cancelled.
-        <br/>
-        - Promotions apply only to Mexican territory.
-        <br/>
-        - The Users acceptance when participating in any of the promotions implies knowledge and express and unreserved consent of the specific Terms and Conditions for said promotion.
-        <br/>
-        - Under no circumstances will promotions be substituted for cash.
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
 *2024
 </div>
       </section>
