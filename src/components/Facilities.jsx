@@ -1,20 +1,30 @@
 import '../css/components/facilities.css'
 import { useState } from 'react'
+import { IoMdClose } from "react-icons/io";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Facilities = () => {
+  const arrImages = ['./be_cardio.jpg', './be_dance.jpg', './be_crossfit.jpg', './be_gym.jpg', './be_pilates.jpg', './be_yoga.jpg', './be_fit.jpg']
   const [imageOpen, setImageOpen] = useState(false);
-  const [img, setImg] = useState('')
 
-  const openImg = (pic) => {
+  const openImg = () => {
     document.body.style.overflowY = 'hidden'
     setImageOpen(true)
-    setImg(pic)
   }
 
   const closeImg = () => {
     setImageOpen(false)
-        document.body.style.overflowY = 'visible'
-    setImg('')
+    document.body.style.overflowY = 'visible'
+  }
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
   }
 
   return (
@@ -29,19 +39,28 @@ const Facilities = () => {
         <div className="facilities__posts">
           {
             <>
-            <img id='1'  src="./be_cardio.jpg" alt="" className='facilities__img facilities__1' onClick={() => openImg(document.getElementById('1').src)} />
-            <img id='2'  src="./be_dance.jpg" alt="" className="facilities__img facilities__5"   onClick={() => openImg(document.getElementById('2').src)}/>
-            <img id='3'  src="./be_crossfit.jpg" alt="" className="facilities__img facilities__2"  onClick={() => openImg(document.getElementById('3').src)} />
-            <img id='4'  src="./be_gym.jpg" alt="" className="facilities__img facilities__3"  onClick={() => openImg(document.getElementById('4').src)} />
-            <img id='5'  src="./be_pilates.jpg" alt="" className="facilities__img facilities__4"   onClick={() => openImg(document.getElementById('5').src)}/>
-            <img id='6'  src="./be_yoga.jpg" alt="" className="facilities__img facilities__7"   onClick={() => openImg(document.getElementById('6').src)}/>
-            <img id='7'  src="./be_fit.jpg" alt="" className="facilities__img facilities__6"   onClick={() => openImg(document.getElementById('7').src)}/>
+            <img id='1'  src="./be_cardio.jpg" alt="" className='facilities__img facilities__1'  onClick={() => openImg()} />
+            <img id='2'  src="./be_dance.jpg" alt="" className="facilities__img facilities__5"    onClick={() => openImg()}/>
+            <img id='3'  src="./be_crossfit.jpg" alt="" className="facilities__img facilities__2"  onClick={() => openImg()} />
+            <img id='4'  src="./be_gym.jpg" alt="" className="facilities__img facilities__3"   onClick={() => openImg()} />
+            <img id='5'  src="./be_pilates.jpg" alt="" className="facilities__img facilities__4"    onClick={() => openImg()}/>
+            <img id='6'  src="./be_yoga.jpg" alt="" className="facilities__img facilities__7"   onClick={() => openImg()}/>
+            <img id='7'  src="./be_fit.jpg" alt="" className="facilities__img facilities__6"    onClick={() => openImg()}/>
             </>
           }
         </div>
       </div>
-      <div onClick={closeImg} className={imageOpen ? 'facilities__showfullimg' : ''}>
-        <img className='facilities__imgOpen' src={img} />
+      <div className={imageOpen ? 'facilities__showfullimg' : ''}>
+      <div className="slider-container">
+          {imageOpen ?
+          <Slider {...settings}>
+                {arrImages.map((img, inx) =>
+                  <img key={inx} className={'facilities__imgOpen'}  src={img} />
+                )}
+            </Slider> : null
+          }
+        </div>
+        <IoMdClose onClick={() => closeImg()} className={imageOpen ? "facilities__close__img" : ''}></IoMdClose>
       </div>
     </section>
   )

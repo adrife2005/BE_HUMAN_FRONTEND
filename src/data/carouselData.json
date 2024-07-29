@@ -24,12 +24,7 @@
       "src": "./be_hero3.jpg",
       "alt": "Image 6 for Carousel",
       "style": false
-    },
-    {
-      "src": "./be_hero_6.jpeg",
-      "alt": "Image 6 for Carousel",
-      "style": false
-    },    {
+    },   {
       "src": "./be_hero_7.jpeg",
       "alt": "Image 6 for Carousel",
       "style": false

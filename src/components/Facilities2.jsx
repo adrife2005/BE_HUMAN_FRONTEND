@@ -1,5 +1,10 @@
 import '../css/components/facilities.css'
 import { useState } from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { IoMdClose } from "react-icons/io";
+
 
 const Facilities = () => {
   const arrImages = ['./be_ins_1.jpg', './be_ins_2.jpg', './be_ins_3.jpg', './be_ins_4.jpg', './be_ins_5.jpg', './be_ins_6.jpg', './be_ins_7.jpg', './be_ins_8.jpg', './be_ins_9.jpg','./be_ins_10.jpg', './be_ins_1.jpg', './be_ins_2.jpg', './be_ins_3.jpg']
@@ -13,6 +18,14 @@ const Facilities = () => {
   const closeImg = () => {
     document.body.style.overflowY = 'visible'
     setImageOpen(false)
+  }
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
   }
 
   return (
@@ -41,15 +54,17 @@ const Facilities = () => {
           }
         </div>
       </div>
-      <div onClick={closeImg} className={imageOpen ? 'facilities__showfullimg' : ''}>
-        <div className={imageOpen ? 'img__container' : ''}>
-          { innerWidth > 500 ? '' :
-            imageOpen ?
-            arrImages.map((img, inx) =>
-                <img key={inx} className={imageOpen ? 'facilities__imgOpen' : 'facilities__closeImg '}  src={img} />
-              ) : ''
-            }
+      <div className={imageOpen ? 'facilities__showfullimg' : ''}>
+      <div className="slider-container">
+          {imageOpen ?
+          <Slider {...settings}>
+                {arrImages.map((img, inx) =>
+                  <img key={inx} className={'facilities__imgOpen'}  src={img} />
+                )}
+            </Slider> : null
+          }
         </div>
+        <IoMdClose onClick={() => closeImg()} className={imageOpen ? "facilities__close__img" : ''}></IoMdClose>
       </div>
     </section>
   )

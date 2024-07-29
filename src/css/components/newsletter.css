@@ -24,10 +24,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-inline: 20px;
 }
 
 #newsletter__email {
-  width: 50%;
+  width: 60%;
   padding: 8px 16px;
   border-radius: 0.5rem;
   border: none;
@@ -67,13 +68,19 @@
 } */
 
 /* md */
-/* @media (max-width: 768px) {
-} */
+@media (max-width: 768px) {
+  #newsletter__email {
+    width: 100%;
+  }
+}
 
 /* sm */
 /* @media (max-width: 640px) {
 } */
 
 /* xs */
-/* @media (max-width: 475px) {
-} */
+@media (max-width: 475px) {
+  .newsletter__input #email__form {
+    flex-direction: column;
+  }
+}
