@@ -5,7 +5,7 @@ import About from "./pages/About"
 import Planes from './pages/Planes'
 import Equipamiento from './pages/Equipamiento'
 import Horarios from "./pages/Horarios"
-import Suscribirse from "./pages/Suscribirse"
+import Contacto from "./pages/Contacto"
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/planes" element={<Planes />} />
         <Route path="/equipamiento" element={<Equipamiento />} />
         <Route path="/ubicacion" element={<Horarios />} />
-        <Route path="/enroll" element={<Suscribirse />} />
+        <Route path="/enroll" element={<Contacto />} />
       </Route>
     )
   )

@@ -217,6 +217,11 @@
   .facilities__2 {
     grid-column: auto;
   }
+
+  .facilities__showfullimg .slider-container {
+    margin-top: 250px;
+    cursor: grab;
+  }
 }
 
 /* xs */

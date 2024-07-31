@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsLightningCharge } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -31,6 +32,7 @@ function SamplePrevArrow(props) {
 }
 
 const Hero = () => {
+  const navigate = useNavigate();
 
 
   const settings = {
@@ -45,6 +47,10 @@ const Hero = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   };
+
+  const goToMembresias = () => { 
+    navigate('enroll')
+  }
 
   return (
     <section className="hero">
@@ -65,7 +71,7 @@ const Hero = () => {
           Vive la experiencia en Be <span>Human</span> y disfruta de las mejores clases
           </p>
           <div className="hero__content">
-            <div  className="hero__content__container">
+            <div onClick={goToMembresias}   className="hero__content__container">
               <div  className= 'box__front'>
                 <div className="hero__content__img">
                     <img src="be_zumba.jpg" alt="First Image of Zumba" />
@@ -93,7 +99,7 @@ const Hero = () => {
               </div>
 
             </div>
-              <div  className="hero__content__container">
+              <div onClick={goToMembresias}  className="hero__content__container">
               <div  className= 'box__front'>
                   <div className="hero__content__img">
                     <img src="be_hero_yoga.jpg" alt="First Image of Zumba" />
@@ -122,7 +128,7 @@ const Hero = () => {
   
             </div>
 
-            <div  className="hero__content__container">
+            <div onClick={goToMembresias}    className="hero__content__container">
               <div  className='box__front'>
                   <div className="hero__content__img">
                     <img src="be_hero_crossfit.jpg" alt="First Image of Zumba" />
@@ -151,7 +157,7 @@ const Hero = () => {
               </div>
     
               </div>
-              <div  className="hero__content__container">
+              <div onClick={goToMembresias}    className="hero__content__container">
               <div  className='box__front'>
                   <div className="hero__content__img">
                     <img src="be_hero_fit.jpg" alt="First Image of Zumba" />
