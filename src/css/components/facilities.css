@@ -60,7 +60,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  z-index: 11;
   cursor: zoom-out;
   transition: 0.3s ease-in-out;
 }
@@ -85,6 +85,10 @@
   font-size: var(--text-5xl);
   fill: white;
   cursor: pointer;
+}
+
+.facilities__close__img__close {
+  display: none;
 }
 
 .facilities__img:hover {

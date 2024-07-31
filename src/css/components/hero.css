@@ -41,8 +41,7 @@
 .hero__wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
-
-  background-color: rgb(202, 138, 4, 0.1);
+  background-color: var(--clr-wrapper);
 }
 
 .hero__content__title {
@@ -65,6 +64,7 @@
 
 .box__front {
   position: relative;
+  background-color: var(--clr-gym);
 }
 
 .box__front:hover {
@@ -73,8 +73,8 @@
 }
 
 .hero__content__img img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .hero__content__img::after {
@@ -100,7 +100,7 @@
 }
 
 .hero__content__wrap {
-  background-color: white;
+  background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -110,7 +110,7 @@
 .hero__content__line {
   margin-inline: auto;
   border: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--clr-gym);
 }
 
 .hero__content__wrap .duracion {
@@ -161,8 +161,8 @@
   padding: 20px;
   font-size: var(--text-sm);
   background-color: var(--bg-color);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* 2xl */

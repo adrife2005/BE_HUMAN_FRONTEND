@@ -60,7 +60,7 @@ const Facilities = () => {
             </Slider> : null
           }
         </div>
-        <IoMdClose onClick={() => closeImg()} className={imageOpen ? "facilities__close__img" : ''}></IoMdClose>
+        <IoMdClose onClick={() => closeImg()} className={imageOpen ? "facilities__close__img" : 'facilities__close__img__close'}></IoMdClose>
       </div>
     </section>
   )
