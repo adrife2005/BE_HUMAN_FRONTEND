@@ -21,13 +21,24 @@ const Header = () => {
     setIsMobileMenuActivate(false)
   }
 
-  document.addEventListener('scroll', () => {
-    if (scrollY >= 75) {
-      setIsMobileMenuActivate(false)
-      setOnScroll(true)
-    } else {
+  // Set the initial position of the header
+  let prevScrollPosition = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    // Get the current scroll position
+    const currentScrollPosition = window.scrollY;
+
+    // Check if the user is scrolling up
+    if (prevScrollPosition < currentScrollPosition) {
+      // Show the header
       setOnScroll(false)
+    } else {
+      // Hide the header
+      setOnScroll(true)
     }
+
+    // Update the last scroll position
+    prevScrollPosition = currentScrollPosition;
   })
 
   const toggleTheme = () => {
