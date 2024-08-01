@@ -90,7 +90,7 @@ const Contacto = () => {
             <label htmlFor="subject" className={isFocusSubject ? 'label__text label__text__focus' : 'label__text'}>Asunto</label>
           </div>
           <div onFocus={() => setIsFocusMsg(true)} className="form__container">
-            <textarea name="Welcome" id="msg" value={msg} className='form__container__msg' autoComplete='off' onChange={(e) => setMsg(e.target.value)}></textarea>
+            <textarea name="Welcome" id="msg" value={msg} className='form__container__msg' autoComplete='off' onChange={(e) => setMsg(e.target.value)} required></textarea>
             <label htmlFor="msg" className={isFocusMsg ? 'label__text__msg label__text__focus__msg' : 'label__text__msg'}>Mensaje</label>
             </div>
             <button type="submit" className='btn_be_human'>Enviar</button>
