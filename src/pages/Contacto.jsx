@@ -26,7 +26,7 @@ const Contacto = () => {
     Email.send({
       SecureToken: "6766495d-4839-44f4-a17e-825ff979e7cf",
       To : 'adrifecova@gmail.com',
-      From : "adrifecova@gmail.com'",
+      From : 'adrifecova@gmail.com',
       Subject : subject,
       Body : bodyMessage
   }).then(
@@ -35,6 +35,8 @@ const Contacto = () => {
         toast.success('Se envio exitosamente')
       } else if (message === "Mailbox name not allowed. The server response was: Envelope FROM 'adrifecova@gmail.com'' email address not allowed.") {
         toast.error('No se envio correctamente')
+      } else if (message === "Failure sending mail.") {
+        toast.warning('No se envio correctamente')
       } else {
         console.log(message);
       }
@@ -42,7 +44,6 @@ const Contacto = () => {
     );
 
 
-    
     setName('')
     setEmail('')
     setPhone('')

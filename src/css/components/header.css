@@ -1,14 +1,13 @@
 .header {
   box-shadow: var(--header-shadow);
   padding: 10px 25px;
-  position: sticky;
   width: 100%;
-  top: 0;
-  z-index: 10;
 }
 
 .header__active {
-  transition: 1s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background-color: var(--bg-color);
 }
 

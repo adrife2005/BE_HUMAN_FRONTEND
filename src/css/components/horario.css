@@ -35,6 +35,15 @@
   font-weight: 500;
 }
 
+.time__container {
+  width: 100%;
+}
+
+.time__container iframe {
+  width: 100%;
+  fill: blue;
+}
+
 /* Sections */
 
 /* 2xl */
