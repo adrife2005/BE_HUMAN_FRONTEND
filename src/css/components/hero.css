@@ -65,6 +65,7 @@
 .box__front {
   position: relative;
   background-color: var(--clr-gym);
+  box-shadow: var(--header-shadow);
 }
 
 .box__front:hover {
@@ -75,17 +76,6 @@
 .hero__content__img img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-}
-
-.hero__content__img::after {
-  content: '';
-  top: 0;
-  position: absolute;
-  background-color: rgb(0, 0, 0, 0.2);
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
 }
 
 .hero__content__name {

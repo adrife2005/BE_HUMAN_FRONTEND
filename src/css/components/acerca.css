@@ -1,6 +1,6 @@
 #about {
   background-color: var(--clr-neutral200);
-  height: 90svh;
+  height: 91svh;
 }
 
 .about .container {
@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: 30px;
   padding-top: 100px;
+  padding-bottom: 100px;
   padding-inline: 20px;
   height: 100%;
 }

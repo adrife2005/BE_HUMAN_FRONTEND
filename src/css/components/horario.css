@@ -37,10 +37,12 @@
 
 .time__container {
   width: 100%;
+  height: 90svh;
 }
 
 .time__container iframe {
   width: 100%;
+  height: 100%;
   fill: blue;
 }
 

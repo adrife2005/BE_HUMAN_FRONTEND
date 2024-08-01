@@ -1,5 +1,6 @@
 import "../css/components/alerts.css"
 import { LiaQuestionSolid } from "react-icons/lia";
+import { BsQuestion } from "react-icons/bs";
 import { useState } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FaArrowUp } from "react-icons/fa6";
@@ -23,7 +24,7 @@ const Alerts = () => {
     <>
       <div onClick={openInfo} className="bot__info">
         <div className="bot__box">
-          { isOpen ? <MdOutlineKeyboardArrowDown className="bot__info__icon" />  : <LiaQuestionSolid className="bot__info__icon"/> }
+          { isOpen ? <MdOutlineKeyboardArrowDown className="bot__info__icon" />  : <BsQuestion className="bot__info__icon"/> }
         </div>
       </div>
 

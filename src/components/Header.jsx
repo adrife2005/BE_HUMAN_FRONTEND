@@ -30,10 +30,10 @@ const Header = () => {
 
     // Check if the user is scrolling up
     if (prevScrollPosition < currentScrollPosition) {
-      // Show the header
+      // Hide the header
       setOnScroll(false)
     } else {
-      // Hide the header
+      // Show the header
       setOnScroll(true)
     }
 
