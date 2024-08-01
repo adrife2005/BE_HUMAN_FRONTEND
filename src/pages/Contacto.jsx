@@ -15,26 +15,46 @@ const Contacto = () => {
   const [isFocusSubject, setIsFocusSubject] = useState(false)
   const [isFocusMsg, setIsFocusMsg] = useState(false)
 
+  const bodyMessage = `Full Name: ${name} <br> Email: ${email} <br> Phone Number: ${phone} Message: ${msg}`
 
 
-  function sendEmail() {
+
+  function sendEmail(e) {
+    e.preventDefault()
+
+
     Email.send({
-        secureToken: "3791bd6c-ab26-4328-8d02-6177e6362b60",
-        To : 'adrifecova@gmail.com',
-        From : 'adrian@hotmail.com',
-        Subject : 'Me',
-        Body : 'No'
-    }).then(
-      message => {
-        if (message === "OK") {
-          toast.success('This was successfully fulfilled')
-        } else {
-          console.log(message);
-        }
-        }
-    )
+      SecureToken: "6766495d-4839-44f4-a17e-825ff979e7cf",
+      To : 'adrifecova@gmail.com',
+      From : "adrifecova@gmail.com'",
+      Subject : subject,
+      Body : bodyMessage
+  }).then(
+    message => {
+      if (message === "OK") {
+        toast.success('Se envio exitosamente')
+      } else if (message === "Mailbox name not allowed. The server response was: Envelope FROM 'adrifecova@gmail.com'' email address not allowed.") {
+        toast.error('No se envio correctamente')
+      } else {
+        console.log(message);
+      }
+    }
+    );
+
+
+    
+    setName('')
+    setEmail('')
+    setPhone('')
+    setSubject('')
+    setMsg('')
+    setIsFocusEmail(false)
+    setIsFocusName(false)
+    setIsFocusPhone(false)
+    setIsFocusSubject(false)
+    setIsFocusMsg(false)
   }
-  
+
 
 
   return (
@@ -54,7 +74,7 @@ const Contacto = () => {
           </p>
         <form onSubmit={sendEmail} className="contact__form">
           <div onFocus={() => setIsFocusName(true)} className="form__container">
-            <input id='name' type="text" value={name} className='form__container__input' autoComplete='off' onChange={(e) => setName(e.target.value)} required />
+            <input id='name' type="text" value={name} className='form__container__input' autoComplete='off' onChange={(e) => setName(e.target.value)} required/>
             <label htmlFor="name" className={isFocusName ? 'label__text label__text__focus' : 'label__text'}>Nombre</label>
           </div>
           <div onFocus={() => setIsFocusEmail(true)}  className="form__container">
@@ -62,7 +82,7 @@ const Contacto = () => {
               <label htmlFor="email" className={isFocusEmail ? 'label__text label__text__focus' : 'label__text'}>Email</label>
           </div>
           <div onFocus={() => setIsFocusPhone(true)} className="form__container">
-            <input id='phone' type="number" value={phone} className='form__container__input'autoComplete='off' onChange={(e) => setPhone(e.target.value)}  required/>
+            <input id='phone' type="number" value={phone} className='form__container__input'autoComplete='off' onChange={(e) => setPhone(e.target.value)} required />
             <label htmlFor="phone"  className={isFocusPhone ? 'label__text label__text__focus' : 'label__text'}>Numero</label>
           </div>
           <div onFocus={() => setIsFocusSubject(true)} className="form__container">
