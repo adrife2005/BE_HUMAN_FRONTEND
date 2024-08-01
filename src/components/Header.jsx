@@ -1,13 +1,16 @@
 import {NavLink, useLocation} from 'react-router-dom'
-import {  FaInstagram,  FaRegLightbulb, FaPhoneAlt } from 'react-icons/fa'
+import {  FaInstagram, FaPhoneAlt } from 'react-icons/fa'
 import { SlSocialFacebook } from "react-icons/sl";
+import { MdOutlineDarkMode } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaRegSun } from "react-icons/fa6";
 import '../css/components/header.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isMobileMenuActivate, setIsMobileMenuActivate] = useState(false)
+  const [onTheme, setOnTheme] = useState(false);
   const [onScroll, setOnScroll] = useState(false)
   const location = useLocation();
 
@@ -25,8 +28,24 @@ const Header = () => {
     } else {
       setOnScroll(false)
     }
-
   })
+
+  const toggleTheme = () => {
+    document.body.classList.toggle('dark-mode')
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark-mode')
+      setOnTheme(true)
+    } else {
+      localStorage.removeItem('theme');
+      document.body.removeAttribute('class')
+      setOnTheme(false)
+    }
+  }
+
+  useEffect(() => {
+    const getLocal = localStorage.getItem('theme');
+    getLocal && document.body.classList.add('dark-mode')
+  }, [])
 
 
   const linkClass = ({ isActive }) =>
@@ -56,7 +75,7 @@ const Header = () => {
             <NavLink target='_blank' to='https://www.facebook.com/behumancol' className='nav__item'> <SlSocialFacebook/></NavLink>
             <NavLink target='_blank' to='https://www.instagram.com/behumancol' className='nav__item'> <FaInstagram/></NavLink>
             <div className="nav__line"></div>
-            <div className="nav__item nav__item__open"><FaRegLightbulb/></div>
+              <div onClick={toggleTheme} className="nav__item nav__item__open">{ onTheme ? <FaRegSun/> : <MdOutlineDarkMode/> }</div>
             <button onClick={hamburgerMenu}  className='nav__hamburger'  >
               <div className="top"></div>
               <div className="middle"></div>
