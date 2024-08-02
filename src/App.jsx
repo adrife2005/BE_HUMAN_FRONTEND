@@ -6,6 +6,7 @@ import Planes from './pages/Planes'
 import Equipamiento from './pages/Equipamiento'
 import Horarios from "./pages/Horarios"
 import Contacto from "./pages/Contacto"
+import Error from './pages/Error'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/equipamiento" element={<Equipamiento />} />
         <Route path="/ubicacion" element={<Horarios />} />
         <Route path="/enroll" element={<Contacto />} />
+        <Route path="*" element={<Error/>} />
       </Route>
     )
   )

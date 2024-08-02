@@ -1,8 +1,25 @@
 import '../css/components/newsletter.css'
 import { useState } from 'react'
+import axios from 'axios'
+import {toast} from 'react-toastify'
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
+
+  const API_URI = 'https://be-human-backend.vercel.app/';
+
+  const postEmail = (newEmail) => {
+    axios.post(API_URI, newEmail)
+      .then((response) => toast.success(`El email ${response.data.email} se envio con exito`))
+      .catch((error) => {
+        if (error.code === 'ERR_BAD_REQUEST') {
+          toast.error('Ingresa un diferente email')
+        } else {
+          toast.error('No se pudo enviar correctamente')
+        }
+      })
+
+  }
 
   const newEmail = (e) => {
     e.preventDefault();
@@ -11,7 +28,7 @@ const Newsletter = () => {
       email
     }
 
-    console.log(setNewEmail)
+    postEmail(setNewEmail)
     setEmail('')
   }
 
