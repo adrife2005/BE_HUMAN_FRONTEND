@@ -6,9 +6,9 @@ import {toast} from 'react-toastify'
 const Newsletter = () => {
   const [email, setEmail] = useState('');
 
-  const API_URI = 'https://be-human-backend.vercel.app/api/emails';
+  const API_URI = 'https://behumanbackend.vercel.app/emails';
 
-  const postEmail = (newEmail) => {
+  const postEmail = (newEmail) => 
     axios.post(API_URI, newEmail)
       .then((response) => toast.success(`El email ${response.data.email} se envio con exito`))
       .catch((error) => {
