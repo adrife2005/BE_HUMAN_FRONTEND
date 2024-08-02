@@ -8,7 +8,7 @@ const Newsletter = () => {
 
   const API_URI = 'https://behumanbackend.vercel.app/emails';
 
-  const postEmail = (newEmail) => 
+  const postEmail = (newEmail) => {
     axios.post(API_URI, newEmail)
       .then((response) => toast.success(`El email ${response.data.email} se envio con exito`))
       .catch((error) => {
