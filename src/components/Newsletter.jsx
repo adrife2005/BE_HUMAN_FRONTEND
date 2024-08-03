@@ -6,7 +6,7 @@ import {toast} from 'react-toastify'
 const Newsletter = () => {
   const [email, setEmail] = useState('');
 
-  const API_URI = 'http://localhost:3000/api/emails';
+  const API_URI = 'https://behumanbackend.vercel.app/emails';
 
   const postEmail = (newEmail) => {
     axios.post(API_URI, newEmail)
