@@ -49,7 +49,7 @@ const Hero = () => {
   };
 
   const goToMembresias = () => { 
-    navigate('enroll')
+    navigate('planes')
   }
 
   return (
