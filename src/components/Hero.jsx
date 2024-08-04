@@ -116,7 +116,7 @@ const Hero = () => {
                   <div className="intencidad">
                         <BsLightningCharge />
                         <p className='hero__one'>Intensidad</p>
-                        <p className='hero__two'>Alta</p>
+                        <p className='hero__two'>Media</p>
                       </div>
                 </div>
                 <hr className='hero__content__line'/>
@@ -163,7 +163,7 @@ const Hero = () => {
                     <img src="be_hero_fit.jpg" alt="First Image of Zumba" />
                   </div>
                     <div className="hero__content__name">
-                      <p>GYM</p>
+                      <p>PILATES</p>
                 </div>
                 <div className="hero__content__wrap">
                       <div className="duracion">
@@ -174,13 +174,12 @@ const Hero = () => {
                   <div className="intencidad">
                         <BsLightningCharge />
                         <p className='hero__one'>Intensidad</p>
-                        <p className='hero__two'>Alta</p>
+                        <p className='hero__two'>Media</p>
                       </div>
                 </div>
                 <hr className='hero__content__line'/>
                 <div className="hero__content__info">
-                  <p>      Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
-                  </p>
+                  <p>      Libera tu energía en un entrenamiento guiado que combina técnicas de artes marciales, música y ejercicio.  </p>
                 </div>
               </div>
 

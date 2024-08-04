@@ -24,26 +24,14 @@
       "button": "Ver más"
     },    {
       "src" : "./be_staff_5.jpg",
-      "name": "Fernando",
+      "name": "Karla",
       "description": "Todo esfuerzo vale la pena, no dudes en comenzar tu vida fit con la ayuda de nuestro coach Fernando!🔥💪🏼",
       "button": "Ver más"
     },
     {
       "src" : "./be_staff_6.jpg",
-      "name": "Karla",
+      "name": "Fernando",
       "description": "¡Encuentra el equilibrio de tu cuerpo y tu mente con el coach Adrián!🧘🏼‍♂️ YOGA✨-Lunes a viernes-Clases: 8 y 9 AM 🧘🏼‍♂️👏🏼",
-      "button": "Ver más"
-    },
-    {
-      "src" : "./be_staff_7.jpg",
-      "name": "Arturo",
-      "description": "¡Cambia tu estilo de vida con nuestro coach Arturo! 💪💯",
-      "button": "Ver más"
-    },
-    {
-      "src" : "./be_staff_8.jpg",
-      "name": "Adriana Rodríguez",
-      "description": "¡Hoy inicia con toda la actitud!💯Coach Adriana Rodríguez💪",
       "button": "Ver más"
     }
   ]

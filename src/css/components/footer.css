@@ -91,13 +91,24 @@
 }
 
 .footer__conditions {
-  padding: 30px 0;
-  border-bottom: 1px solid var(--clr-default);
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__conditions div {
   font-size: var(--text-sm);
   line-height: 2;
+}
+
+.footer__conditions2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__conditions2 .navbar__social {
+  font-size: var(--text-2xl);
 }
 
 /* xl */

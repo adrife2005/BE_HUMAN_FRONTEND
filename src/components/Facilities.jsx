@@ -33,7 +33,7 @@ const Facilities = () => {
         <div className="facilities__logo">
           <h3 className='facilities___title'>Instalaciones</h3>
           <p className='facilities__description'>En <span>Be Human</span> contamos con la mejor tecnología life fitness para facilitar y aumentar tu desempeño físico.
-            Cuidamos cada detalle para ofrecerte espacios de entrenamiento y relajación de calidad. Conoce nuestro gimnasio, salones y area libre.
+            Cuidamos cada detalle para ofrecerte espacios de entrenamiento y relajación de calidad. Conoce nuestro gimnasio, cafeteria, salones y area libre.
           </p>
         </div>
         <div className="facilities__posts">
